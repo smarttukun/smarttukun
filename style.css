@@ -1,0 +1,13 @@
+header{
+ 
+    text-align:center;
+   
+    color:rebeccapurple;
+   
+    text-shadow: 1px 2px cyan;
+   
+   background-image: url(' back.jpg ');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 700px;
+   }

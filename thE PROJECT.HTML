@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <style>
+    body {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('https://media.tenor.com/images/75e9052f5b612b8bf7e611a55e8c863b/tenor.gif');
+    }
+
+    p {
+      color: blueviolet;
+    }
+
+
+    #result {
+      height: 0px;
+      overflow: hidden;
+      transition-duration: 1s;
+    }
+
+   
+  </style>
+
+
+
+  <title>Search my movie</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+   
+
+  <div style="background-color: rgba(15, 165, 23, 0.733);" class="container">
+    <div class="card shadow-lg">
+
+      <div  class="card-body">
+        <h1 class="text-center">Search for a Movie</h1>
+        <hr>
+        <input placeholder="Enter Your Movie Name" class="form-control mt-5" id="name">
+        <input placeholder="Enter movie release date(Optional)" class="form-control mt-3">
+        <button id="search" class="btn btn-primary mt-3">Search
+        </button>
+
+      </div>
+    </div>
+    <!-- we cannot use the text centre in inline display  -->
+    <div id="result" class="card mt-5">
+      <div class="row">
+
+        <div class="col-md-4">
+
+          <img src="" alt="" id="img" class="card-img-top">
+
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+
+            <p class="h4" id="title"></p>
+
+            <div class="row mt-5">
+
+              <div class="col-md-4">
+                <p class="h3">Title</p>
+              </div>
+              <div class="col-md-8">
+
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4">
+                <p class="h3">Year</p>
+              </div>
+              <div class="col-md-8">
+                <p class="h4" id="year"></p>
+              </div>
+            </div>
+            <div class="row mt-3">
+
+              <div class="col-md-4">
+                <p class="h3">Plot</p>
+              </div>
+              <div class="col-md-8">
+                <p class="h4" id="plot"></p>
+              </div>
+            </div>
+            <div class="row mt-3">
+
+              <div class="col-md-4">
+                <p class="h3">Rating</p>
+              </div>
+              <div class="col-md-8">
+                <p class="h4" id="rate"></p>
+              </div>
+            </div>
+            <div class="row mt-3">
+
+              <div class="col-md-4">
+                <p class="h3">Runtime</p>
+              </div>
+              <div class="col-md-8">
+                <p class="h4" id="genr"></p>
+              </div>
+            </div>
+            <div class="row mt-3">
+
+              <div class="col-md-4">
+                <p class="h3">Languages</p>
+              </div>
+              <div class="col-md-8">
+                <p class="h4" id="lang"></p>
+              </div>
+            </div>
+            <div class="row mt-3">
+
+              <div class="col-md-4">
+                <p class="h3">Awards</p>
+              </div>
+              <div class="col-md-8">
+                <p class="h4" id="awards"></p>
+              </div>
+            </div>
+            <div class="row mt-3">
+
+              <div class="col-md-4">
+                <p class="h3">Director</p>
+              </div>
+              <div class="col-md-8">
+                <p class="h4" id="d"></p>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+
+              <div class="col-md-4">
+                <p class="h3">Actors</p>
+              </div>
+              <div class="col-md-8">
+                <p class="h4" id="a"></p>
+              </div>
+            </div>
+            <div class="row mt-3">
+
+              <div class="col-md-4">
+                <p class="h3">Genre</p>
+              </div>
+              <div class="col-md-8">
+                <p class="h4" id="genre"></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Set up our HTTP request
+    var xhr = new XMLHttpRequest();
+
+    // Setup our ER to process completed requests
+    xhr.onload = function () {
+
+      // Process our return data
+      if (xhr.status >= 200 && xhr.status < 300) {
+        // What do when the request is successful
+        // console.log('success!', xhr);
+        data = xhr.response;
+        data = JSON.parse(data);
+        console.log(data.Actors);
+        keys = Object.keys(data);
+
+        document.getElementById('img').setAttribute('src', data.Poster)
+        document.getElementById('title').innerHTML = data.Title;
+        document.getElementById('year').innerHTML = data.Year;
+        document.getElementById('plot').innerHTML = data.Plot;
+        document.getElementById('rate').innerHTML = data.Rated;
+        document.getElementById('genre').innerHTML = data.Genre;
+        document.getElementById('genr').innerHTML = data.Runtime;
+        document.getElementById('lang').innerHTML = data.Language;
+        document.getElementById('awards').innerHTML = data.Awards;
+        document.getElementById('d').innerHTML = data.Director;
+        document.getElementById('a').innerHTML = data.Actors;
+
+        document.getElementById('result').style.height = '1000px';
+
+      }
+      else {
+        // What do when the request fails
+        console.log('The request failed!');
+      }
+
+      // Code that should run regardless of the request status
+      console.log('This always runs...');
+    };
+    // This is for going to the website and getting 
+    getDetails = (name, year) => {
+      xhr.open('GET', 'http://www.omdbapi.com/?t=' + name + '&plot=full&apikey=2467ae4b');
+      xhr.send();
+    }
+    let mybtn = document.getElementById('search')
+
+    mybtn.onclick = function () {
+      let movie_name = document.getElementById('name').value;
+      console.log(movie_name)
+
+      getDetails(movie_name, 2010);
+    }
+  </script>
+
+</body>
+
+</html>

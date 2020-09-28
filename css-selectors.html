@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ <style>
+
+.hi{
+
+background-repeat: no-repeat;
+background-size: cover;
+height: 700px;
+
+}
+div{
+   
+   
+   padding:20px;
+
+
+}
+.my-card , .big-card{
+    
+    box-shadow: 5px 3px 2px 2px rgba(0, 0, 0, 0.486);
+    margin-top: 50px;
+    border-radius:10px;
+}
+
+
+
+.my-card{
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.486);
+    margin-top: 50px;
+    border-radius:10px;
+    width:100%;        
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;                       
+    transition-duration: 200ms;
+    transition-timing-function: ease-in; 
+    /* transform: translateZ(-50px); */
+    background-color: rgb(0, 255, 200);
+}
+.big-card{
+   width:1500px;
+   margin-right:auto;
+   margin-left:auto;
+
+
+}                         
+
+    .my-card:hover{
+      box-shadow: 2px 2px 15px 4px rgba(0, 0, 0, 0.486);
+      background-color: black;
+      color:white;
+      transform:rotateX(0deg) translateZ(50px)
+    }
+    
+button:hover{
+  background-color:white;
+  color:black;
+
+}
+
+.my-card img{
+            width:100%;
+transition-duration: 100ms;
+}
+
+
+
+
+.button{
+   transition-duration: 1s;
+            text-decoration:wavy;
+            font-size:15px;
+            padding:8px 12px 8px 12px;
+          color:white;
+          background-color: black;
+           ;
+}
+.my-card button{
+margin-left: auto;
+display: block;
+}
+.review h1{
+  color: rgba(255, 0, 106, 0.671);
+}
+
+.my-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around
+}
+header h1{
+    font-family: cursive;
+    font-size:80px;
+    margin-top:0px;
+   
+}
+header h3{
+    font-family: cursive;
+    font-size:50px;
+    margin-bottom:0px;
+}
+#mid-section{
+    box-shadow: 0px -5px 5px 1px rgba(0, 0, 0, 0.432);
+}
+header{
+    text-align: center;
+    padding:50px 0px;
+
+}
+.review img{
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.review h1, p{
+text-align: center;
+
+
+}
+body{
+font-family: sans-serif;
+-webkit-transform: perspective(900px);
+-webkit-transform-style: preserve-3d;
+background-image:url('https://www.azonano.com/images/Article_Images/ImageForArticle_4983(1).jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+footer{
+  padding:50px;
+  background-color:black;
+  margin-top:100px;
+}
+
+.footer-content{
+  color:cornsilk;
+
+}
+.footer-content p{
+  text-align:center;
+}
+.btn{
+  background-color: blueviolet;
+  color: cornsilk;
+  border: 2px solid white;
+  border-radius:5px;
+  padding: 10px 20px;
+}
+#hed{
+  background-color: rgba(255, 248, 248, 0);
+}
+ </style>
+ 
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+<title></title>
+
+</head>
+
+
+
+<body>
+    
+  <nav id="hed" class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="#"><img style="height: 3rem" src="https://m-triple-m.github.io/sophomore/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+ <div style="text-align: center;">
+
+  <!-- <img style="margin-right: 1000px;" src="data:image/png;base64,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" alt=""> -->
+
+<!-- <button style="background-color: rgba(255, 255, 240, 0); color: ivory;margin: 30px;padding: 10px; border: solid 1px rgba(0, 0, 0, 0);">Home</button> -->
+<!-- <button style="background-color: rgba(255, 255, 240, 0); color: ivory;;margin: 30px;padding: 10px; border: solid 1px rgba(0, 0, 0, 0);">Info</button> -->
+<!-- <button style="background-color: rgba(255, 255, 240, 0); color: ivory;;margin: 30px;padding: 10px; border: solid 1px rgba(0, 0, 0, 0);">Book class</button> -->
+ </div>
+
+
+    <header class="text-center">
+
+      <h3 style=color:white>Digipodium Sophomore</h3>
+     
+    <button class="button">Start Learning!Don't waste time!</button>
+
+</header>
+<img class="img-fluid" src="https://m-triple-m.github.io/sophomore/back.png" alt="">
+<div style="background-color: ivory;">
+  <div class="">
+  <div class="row justify-content-center">
+
+    <div class="col-md-3 ">
+      <div class="my-card">
+        <img src="https://skywell.software/wp-content/uploads/2018/12/web-development-1024x605.jpg" alt="">
+        <h1>WEB DEVELOPMENT</h1>
+      <p>Learn to create the most demanded ,responsive and interactive websites .</p>
+       <button  class="button" id="mybtn">Learn More...</button>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+
+<div class="col-md-3">
+  <div class="my-card">
+    <img src="https://cdn.spec-india.com/wp-content/uploads/2019/12/Python-Trends-2020.png" alt="">
+    <h1>Python Programming</h1>
+  <p>Get into the most wanted and easiest Programming Language  .</p>
+   <button  class="button" id="btn2">Learn More...</button>
+    
+  </div>
+</div>
+<div class="col-md-1"></div>
+     <div class="col-md-3">
+      <div class="my-card">
+    
+        <img src="https://digitalcruise.in/wp-content/uploads/2019/10/social-media-marketing.jpg" alt="">
+        <h1>Social Media Marketing</h1>
+      <p>Learn to create ads and market on the most popular social media platforms .</p>
+       <button  class="button" id="btn1">Learn More...</button>
+      </div>
+
+  </div>
+     </div>
+     
+    </div>
+
+
+
+
+<h1 style="text-align: center;margin-top:80px;font-size:40px;">What parents say..</h1>
+
+     
+  
+     </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<!-- Swiper -->
+<div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1J4hrjJvN2tIWSXrCalICKT99LtDvVeEO9Q&usqp=CAU');background-repeat: no-repeat;background-size: cover;" class="swiper-container">
+
+  <div class="swiper-wrapper" style="color: white; font-family: cursive;font-size: xx-large;">
+    <div class="swiper-slide hi"> <img src="https://www.thefamouspeople.com/profiles/thumbs/charlie-sheen-3.jpg" alt="" >I got my kids in to this and it's amazing!They understood every concept!</div>
+    <div  class="swiper-slide hi"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSICPp1EgJvKfG7IhfRIpo_KSW6-vHszaJOzQ&usqp=CAU" alt=""> I got my kids in to this and it's amazing!They understood every concept!</div>
+    <div class="swiper-slide hi"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5UNJqWjmblcrdQ988d18W5u7ea90iaqFPQw&usqp=CAU" alt="">I got my kids in to this and it's amazing!They understood every concept!</div>
+
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="../package/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
+<footer>
+    <div class="my-row">
+<div class="footer-content">
+<h1>Sophomore Programmes</h1>
+<h3>WEb Development</h3>
+<h3>Social Media Marketing</h3>
+<h3>Python Programming</h3>
+
+</div>
+<div style="color:white">
+  <h1>Other Programmes</h1>
+  <h3>IT Training</h3>
+  <h3>Digital Marketing Service</h3>
+<h3>Event Management </h3>
+<a  href="feedback.html">Contact Us!!</a>
+</div>
+    </div>
+</footer>
+
+<script>
+
+document.getElementById('mybtn').onclick = function(){
+  Swal.fire(
+'Oh No!',
+'You clicked the button!',
+'error'
+)
+}
+document.getElementById('btn1').onclick = function(){
+  Swal.fire(
+'Oh No!',
+'You clicked the button!',
+'error'
+)
+}
+document.getElementById('btn2').onclick = function(){
+  Swal.fire(
+'Oh No!',
+'You clicked the button!',
+'error'
+)
+}
+
+</script>
+
+</body>
+
+ 
+</html>

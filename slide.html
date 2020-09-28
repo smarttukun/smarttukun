@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 900px;
+      height: 700px;
+      position: absolute;
+      left: 30%;
+      top: 50%;
+      margin-left: -150px;
+      margin-top: -150px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url('https://heavy.com/wp-content/uploads/2017/03/dark-link-costume-zelda-breath-of-the-wild-1024x600.jpg?quality=65&strip=all&w=780')"></div>
+      <div class="swiper-slide" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcShL2QwECzUUDOXcNrdjhGr53J3Zd_ulFutyg&usqp=CAU')"></div>
+      <div class="swiper-slide" style="background-image:url('https://lh3.googleusercontent.com/proxy/TZ5ePlqzIeym0GHxvpXSHsV02BWsLKkJb0oLKKHZuTDdTIxvgdJp8AqhyTruGm_Ta_8iU8kbO9FMBprD9xMfuKXz4kFcoCig0FTUHsZai820FCaAp6SGDx8A47hh7r7Lz5MIEVU6XNNpnd8TRelwdepKGnYftyYNfLlOVnKxHOedUEb82w7CnErcSzbfZiF-')"></div>
+      <div class="swiper-slide" style="background-image:url('https://i.insider.com/58d19303d349f914038b5e2c?width=1100&format=jpeg&auto=webp')"></div>
+      <div class="swiper-slide" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTlxKabPIpkrqDIiY3dzuq1u1q51XKMzngvIg&usqp=CAU')"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+
+</html>

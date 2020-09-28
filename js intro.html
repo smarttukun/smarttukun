@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+
+
+</head>
+<body>
+
+<h1>Welcome To JavaScript</h1>
+
+<button id="my-btm">Change Me</button>
+<button id="my-btn">Another button</button>
+<button id="splat">Do you want to know my name? Click here!!</button>
+<script>
+
+// js intro
+
+console.log("Hurray it works!");
+console.log(175765+5686976)
+let myname ="Arush"
+let a = 10;
+let b =35;
+console.log(a+b);
+console.log(myname);
+
+// document.getElementById('my-btm').addEventListener('click', function(){ document.getElementById('my-btm').innerHTML='Text-changes'; } )
+
+document.getElementById('my-btm').onclick = function(){ document.getElementById('my-btm').style.backgroundColor = "chartreuse"}
+
+
+let num1=55676
+let num2=7565
+console.log(num1+num2)
+console.log(typeof a);
+// js functions
+
+// defining the function
+let myfunction = function(){
+    console.log('My Favourite');
+    console.log('Game');
+    console.log('Character');
+    console.log('is');
+    console.log('Leon S Kennedy');
+}
+
+// calling the function
+myfunction();
+myfunction();
+myfunction();
+
+document.getElementById('my-btn').onclick = function(){
+    alert('You were not supposed to click this button...sorry,you lost.')
+}
+
+document.getElementById('splat').onclick = function(){
+    alert('My name is the gamer boy.')
+}
+</script>
+
+</body>
+
+
+</html>

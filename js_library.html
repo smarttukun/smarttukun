@@ -1,0 +1,44 @@
+<html>
+
+<head>
+
+<style>
+
+.btn{
+    background-color: blueviolet;
+    color: cornsilk;
+    border: 2px solid white;
+    border-radius:5px;
+    padding: 10px 20px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+  
+    
+    <button class="btn" id="mybtn">
+          CLICK ME!
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script>
+
+document.getElementById('mybtn').onclick = function(){
+    Swal.fire(
+  'Oh No!',
+  'You clicked the button!',
+  'Warning'
+)
+}
+
+</script>
+
+
+
+</body>
+
+
+</html>

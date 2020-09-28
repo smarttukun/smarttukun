@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+.myrow{
+
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.box{
+    height:25px;
+    width: 30px;
+    background-color: ivory;
+    
+}
+
+
+</style>
+
+</head>
+
+<body style="background-color: gray;">
+    
+
+    <div style="text-align:center;color:white">
+        <div class="card-body">
+            <h1 id="target">Select the Color in the palatte below and start drawing by clicking on board</h1>
+            <a href="https://www.google.com/search?q=pixel+art&sxsrf=ALeKk00rwETysI2nTlC-627A2ILcuHZ7Mw:1597666748580&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiT15K4nKLrAhUOzTgGHbvOAmIQ_AUoAXoECBQQAw&cshid=1597667007684189&biw=1745&bih=915"
+             style="font-size: 2rem;background-color: yellow;" target="_blank">Example</a>
+
+             <input type="color" id="col">
+<div class="myrow" id="target-row">
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<div class="myrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script>
+
+
+
+
+
+let target = document.getElementById('target');
+target.innerHTML = "Do Whatever You Like"
+
+let div_element = document.getElementById('target-row');
+
+
+let boxes_to_insert = 20;
+            for(let i=0;i<boxes_to_insert;i++){
+                div_element.innerHTML += '<div class="box"></div>'
+            }
+            let all_divs = document.getElementsByClassName('box')
+
+for(let i=0;i<all_divs.length;i++){
+    all_divs[i].onclick = function(e){ 
+        var sel_color = document.getElementById('col').value;                                                               
+        console.log(e.target);
+        e.target.style.backgroundColor = sel_color;  };
+        }
+
+</script>
+
+<h1>For Example</h1>
+<div>
+<img src="data:image/jpeg;base64,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" alt="">
+<img src="data:image/jpeg;base64,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" alt="">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAMAAADQmBKKAAABL1BMVEX///8AAADrihr93AEBkj/ZJRwAXKH93ACAG3fy8vJiqDEAkEDvnRcAW6L5+fn02gHZ2dnsjhoRERHkZxvf398BlDoBgmYWFha2HxdbW1sBl0H/4QBoLoHS0tLFIRrRIBu1ahSHUA8BXChOTk4AMlhECzs/Pz9tbW02CzJ7e3tHR0fx38iSfwHrgwDvvY3DqwDGxsbYEgC1tbUnBgWDFhGoHRXgdnP55pDx8/765Xb079UBcTEAS4QAP29rFmRbFFUSBBExMTEkJCTtqGH93Sj07sT45oWIiIiPFxFoDwoIICCjpKQVAADcRkDfaWXoi4r24uKyTxXrooDlcDCEOhDx6Nrvxpy4ehHxyIqKXA3830P26rJHfycyXx8ARh4VPSIAVkYYLEJWJ2w/HzktFSrlp6OBAAADf0lEQVR4nO2be3fSMBiHgbFhnKuI1cEmQ4cyQadsiu4mzrnJvM8LXuZ9+v0/gzreNymUpC1tmo7zPvtjkCbpc97Q38k5gVSKIPRi5eVY0lFMPsgOKWSnCzJm89JRq9JR6SoLKySlUFYISWloFFJViIRIiIS8KAOKqQur2AkTksH7fEc+qtaETsESkvEJWkUZ+9hlB+duYssd+ain2KcUqFRCqDIpo6gQWpCOuqtPqEVCJERC/ULy/Z0DjLpmEKFnmJDP+aiit1AVE1Ie+M7C7C8A0pknK9iFm70oBhglzBRr5who+ZQueEIqVsoND3rV2rECCZHQmAlZ+oRWED9CljsPRxJS5OHLe8ArTFqeQzV3QoqNc6sCBPD5F3aeo1Zep6weB5XBUSIheansWWx7c14Tby3W4+Dd4KX37rUTQpfP6WH51hoIdV3XriiFMnpwCg1eIyESCiiUWQYMCzEUeowYFcpk8CH/AAFpdQ0LAaJUN/DDREIkREIkREIghE1KoY9ndPOJC2HLZ5XQ7fmcZp6g0N5ur2H+plGhicBCE5pxCh03eArljv/gH38R2fu+Cv2/YKhCuYRVKHd4H/iSkAqtrwHdw10gZ/QztI6b/I1d8cSZrZAQ6r+ShAr1XT95FUqcEC2ZoQp1N3rsJaNCOclrcxVy7kCCVUjzfsiNh9DZ+FEKfT0dP99UQpvZ6bjJLiqF5rJxMzdMqCCEgBhEkGFCjRrwfRGY1i60ibf6gTevi2MhiHWLbce2do7CMDgHGXJuZhVMCPk6USQhEhoXobQQ0pSQqjwcIlQFGjwho/YRediAW9UVQnh0bIlz6ogjuy8PAYXPkLXTJ+RLJE6hEb+Dljih7IVoCS10MWJ+hhWamomWB5EJTYUjrFC11KN6FdkK5bOF0/zCmTuBHnvcQ7I8L1U4IV6Yhs2k+0M/2JELRfYjARIiofETChWNXKgWUoiVkJESUuQhTlMPKYR7yBHXThTGDrI/9AMLJxT2o0NCJJQQoZlYhI4u+ecoqjwcIlRa6lG6fg1on5LRxi6/YdBSJ3IhjthDyoUe6lspNzYJkRAJJUko+jx040hIBM3a2PAnhjwU4M6P/25nuz1YmEd2KuL9oR/KSiEDkBAJja9Q2iW0Y0TIrgMlkYfQEkseyimbXSk3ZbMr5YaEvCAhL5IrNJsQIbveAczmIUEc8xexHKnfyqs8iQAAAABJRU5ErkJggg==" alt="">
+</div>
+</body>
+
+</html>
